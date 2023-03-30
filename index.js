@@ -10,7 +10,7 @@ app.post('/', (req, res) => {
   console.log(req)
   let data = req.body;
   console.log('data', data.json());
-  res.send(data);
+  res.send(data.json());
 })
 
 app.listen(port, () => {
